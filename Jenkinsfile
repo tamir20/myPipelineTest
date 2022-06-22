@@ -2,9 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Build') {
             steps {
-                echo 'Hello World'
+                git 'https://github.com/tamir20/myPipelineTest.git'
+                bat nmv clean compile
             }
         }
     }
