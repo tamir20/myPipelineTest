@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 git 'https://github.com/tamir20/myPipelineTest.git'
-                bat '.\mvnw.cmd clean compile'
+                bat '.\mvnw clean compile'
             }
         }
     }
